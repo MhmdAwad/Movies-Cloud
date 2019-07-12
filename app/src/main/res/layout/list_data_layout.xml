@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/PosterImage"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/cover" />
+
+            <TextView
+                android:id="@+id/MovieTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PosterImage"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp"
+                tools:text="Mafia II" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/MovieTextView"
+                android:background="#B4B4B4" />
+
+            <ImageView
+                android:id="@+id/voteStars"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/MovieTextView"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/one"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/voteAverage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/MovieTextView"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#E2BD0C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="6.8" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

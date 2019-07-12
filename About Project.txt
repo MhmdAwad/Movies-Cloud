@@ -1,0 +1,2 @@
+This Project is called Movies Cloud which get data (Movies Reviews) from JSON api and parse it 
+in grid view with all data about the selected item (movie)..
